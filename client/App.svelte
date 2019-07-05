@@ -1,3 +1,7 @@
+<script>
+let customElementName = 'element-override'
+</script>
+
 <h1>Custom Elements</h1>
 This test expects Firefox or Chrome.
 
@@ -9,8 +13,15 @@ This works great.
 <h2>Element Overrides</h2>
 Overrides of elements are where the problem lies.
 <h3>Svelte</h3>
-Invoking an override with "is='element-name'"
-<a href is='element-override'>Doesn't Work</a>
+<p>
+	Invoking an override with "is='element-name'"
+	<a href is='element-override'>Doesn't Work</a>
+</p>
+<p>
+	With a component-defined property expression...
+	<a href is={customElementName}>Doesn't Work</a>
+</p>
+
 
 <h3>Raw String</h3>
 Invoking an override with an {@html "{@html}"} raw string

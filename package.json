@@ -1,0 +1,19 @@
+{
+  "name": "svelte_custom_element_overrides",
+  "version": "1.0.0",
+  "description": "A showcase of the current issues with Svelte 3 and custom element overrides.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Taylor Hadden",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "rollup": "^1.16.6",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-svelte": "^5.1.0",
+    "svelte": "^3.6.4"
+  }
+}
